@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Eid Card Generator By FUDC</h1>
+    <h3>Eid Card Generator By FUDC IT cell</h3>
+    <div class="card" id="eidCard">
+        <h2 id="eidMessage">Eid Mubarak!</h2>
+    </div>
+    <button class="generate-btn" onclick="generateCard()">Generate</button>
+
+    <!-- Footer Section -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+          
+           
+            <div id="qrCodeContainer">
+                <p>Scan the QR Code to Visit Our Facebook Page:</p>
+                <div id="qrCode"></div>
+            </div>
+        </div>
+        <div>
+            <p>Copyright &copy; <span id="currentYear"></span> by <span>Feni University Debating Club</span> . All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
