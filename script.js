@@ -4,7 +4,8 @@ const messages = [
     "May your life be filled with happiness and prosperity this Eid."
 ];
 
-const backgroundImages = ["Card2.png", "Card3.png", "Card4.png"];
+const backgroundImages = ["Eid/Card2.png", "Eid/Card3.png", "Eid/Card4.png"];
+
 
 function getRandomImage() {
     return backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
