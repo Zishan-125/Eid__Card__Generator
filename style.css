@@ -72,6 +72,24 @@ h3{
     background-color: #218838;
 }
 
+#downloadBtn{
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#downloadBtn:hover{
+   
+        background-color: #218838;
+    
+}
+
 /* Footer Styles */
 .flex-space-around {
     display: flex;

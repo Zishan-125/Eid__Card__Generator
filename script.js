@@ -15,13 +15,27 @@ function getRandomImage() {
 function generateCard() {
     const card = document.getElementById("eidCard");
     const message = document.getElementById("eidMessage");
-
-    card.style.backgroundImage = `url('${getRandomImage()}')`;
+    
+    // Get a random background image
+    const randomImage = getRandomImage();
+    card.style.backgroundImage = `url('${randomImage}')`;
     card.style.backgroundSize = "cover";
     card.style.backgroundPosition = "center";
     
+    // Set random message
     message.textContent = messages[Math.floor(Math.random() * messages.length)];
+
+    // Enable download functionality
+    document.getElementById("downloadBtn").onclick = function () {
+        const link = document.createElement("a");
+        link.href = randomImage; // Direct link to the image
+        link.download = "Eid_Card.png"; // Name of the downloaded file
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 }
+
 
 // Set the current year dynamically in the footer
 document.getElementById("currentYear").textContent = new Date().getFullYear();
